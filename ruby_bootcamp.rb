@@ -8,6 +8,7 @@ def add_input_numbers()
 end
 
 def compare_age(age)
+  # Whenever using if/else, need to use end block
   # Edge 1: Valid Number
   if not age.is_a? Integer
     puts "I compare numbers only"
@@ -31,10 +32,6 @@ def compare_age(age)
 end
 
 
-=begin
-Data-Structure
-=end
-
 def f_loop_and_array()
   # HUGE difference from python, range upperbound is INCLUSIVE.....
   arr = Array.new()
@@ -44,7 +41,6 @@ def f_loop_and_array()
   puts "#{arr}"
   #print arr
 end
-
 
 def hash_table()
   dic = Hash.new()
