@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'welcome/index'
+
+  # resources = init a REST api
+
+  resources :articles
+
+  #re-route the main page
+  root 'welcome#index'
 end
