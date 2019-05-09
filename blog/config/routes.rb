@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
-  # resources = init a REST api
+  # resources = init a REST routing, make sure to also create
+  # a controller
 
   resources :articles
 
